@@ -77,3 +77,19 @@ docker run --name some-redis -d redis
 docker run --name redis -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis:latest
 
 ```
+
+##  下载工具
+
+###  Aria2 + AriaNg + Filebrowser
+
+https://github.com/wahyd4/aria2-ariang-docker
+
+```
+docker run -d --name aria2-ui -p 80:80 wahyd4/aria2-ui
+```
+
+
+
+
+
+
