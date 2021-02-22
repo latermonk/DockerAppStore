@@ -41,3 +41,42 @@ docker run -d  -p 6080:80 -p 5900:5900 -v /dev/shm:/dev/shm dorowu/ubuntu-deskto
 
 ```
 
+
+
+
+##  数据库
+
+
+###  Postgras
+
+```
+mkdir ${HOME}/postgres-data/
+```
+
+
+```
+docker run -d --name dev-postgres -e POSTGRES_PASSWORD=Pass2020! -v ${HOME}/postgres-data/:/var/lib/postgresql/data   \
+ -p 5432:5432  postgres
+```
+
+
+
+###  mysql
+
+```
+docker run -itd --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
+```
+
+
+
+###  redis
+[https://hub.docker.com/_/redis](https://hub.docker.com/_/redis)
+[https://github.com/bitnami/bitnami-docker-redis](https://github.com/bitnami/bitnami-docker-redis)
+
+```
+docker run --name some-redis -d redis
+
+
+docker run --name redis -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis:latest
+
+```
