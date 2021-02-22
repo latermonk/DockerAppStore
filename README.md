@@ -3,9 +3,9 @@ DockerAppStore is a AppStore full of Docker Images
 
 
 
-** Useful Docker images **
+**Useful Docker images**
 
-##  System docker
+##  管理类
 
 ###  Portainer
 
@@ -18,9 +18,10 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 
 ```
 
+##  系统类
 ###  Ubuntu docker
 
-** Ubuntu 18.04  **
+**Ubuntu 18.04**
 
 ```
 docker run -d -P --name test_sshd    ibackchina2018/ubuntu-sshd:1804   
@@ -34,7 +35,7 @@ docker run -d -P --name test_sshd    ibackchina2018/ubuntu-sshd-python38:1804
 ```
 
 
-** 20.04 Desktop Docker with vnc **
+**20.04 Desktop Docker with vnc**
 ```
 docker run -d  -p 6080:80 -p 5900:5900 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc   
 
