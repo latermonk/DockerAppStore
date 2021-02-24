@@ -56,6 +56,11 @@ docker run -d --name aria2-ui -p 80:80 wahyd4/aria2-ui
 
 
 
+###  youtube-dl-server
+
+https://github.com/manbearwiz/youtube-dl-server     
+
+
 
 ##  数据库
 
