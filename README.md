@@ -21,7 +21,7 @@ docker run --rm -p 3000:3000 wettyoss/wetty --ssh-host=<YOUR-IP>
 
 ```
 
-
+Access @  http://1.2.3.4:3000/wetty   
 
 
 ##  系统类
