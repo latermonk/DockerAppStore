@@ -21,6 +21,10 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 ```
 docker run --rm -p 3000:3000 wettyoss/wetty --ssh-host=<YOUR-IP>
 
+
+
+docker run -d -p 3000:3000 wettyoss/wetty --ssh-host=
+
 ```
 
 Access @  http://1.2.3.4:3000/wetty   
