@@ -102,6 +102,18 @@ docker run -itd --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mys
 
 
 
+**Aother. MYSQL. **    
+
+```
+docker run --name mysql8019 -p 13306:3306 -e MYSQL_ROOT_PASSWORD=root1234 -d mysql:8.0.19
+
+docker run -it --network host --rm mysql mysql -h127.0.0.1 -P13306 --default-character-set=utf8mb4 -uroot -p
+
+```
+
+
+
+
 ###  redis
 [https://hub.docker.com/_/redis](https://hub.docker.com/_/redis)
 [https://github.com/bitnami/bitnami-docker-redis](https://github.com/bitnami/bitnami-docker-redis)
