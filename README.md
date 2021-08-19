@@ -129,5 +129,16 @@ docker run --name redis -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis:latest
 
 
 
+#   IDE
 
+https://github.com/JetBrains/projector-docker   
+
+
+goland
+
+```
+docker run -d -p 8887:8887 -p 8989:8989   -p 8964:8964   -it registry.jetbrains.team/p/prj/containers/projector-goland 
+
+
+```
 
