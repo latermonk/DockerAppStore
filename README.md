@@ -145,7 +145,7 @@ docker run --name  goland  -d -p 8887:8887 -p 8989:8989   -p 8964:8964   -it reg
 ##  添加golang sdk之后
 
 ```
-docker run --name  goland  -d -p 8887:8887 -p 8989:8989   -p 8964:8964   -it   ibackchina2018/goland:v1  
+docker run --name  goland  -d -p 58887:8887 -p 58989:8989   -p 58964:8964   -it   ibackchina2018/goland:v1  
 
 ```
 
