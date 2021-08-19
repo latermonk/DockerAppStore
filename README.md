@@ -13,7 +13,7 @@ docker volume rm portainer_data
 docker volume create portainer_data
 
 
-docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+docker run -d -p 58000:8000 -p 59000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 
 ```
 ###  Web-ssh terminal 
@@ -146,6 +146,13 @@ docker run --name  goland  -d -p 8887:8887 -p 8989:8989   -p 8964:8964   -it reg
 
 ```
 docker run --name  goland  -d -p 58887:8887 -p 58989:8989   -p 58964:8964   -it   ibackchina2018/goland:v1  
+
+```
+
+#  webstorm
+
+```
+  docker run --name  webstorm  -d -p 48887:8887 -p 48080:8080  -p 48989:8989   -p 48964:8964   -it   registry.jetbrains.team/p/prj/containers/projector-webstorm
 
 ```
 
