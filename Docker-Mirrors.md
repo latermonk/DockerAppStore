@@ -17,3 +17,14 @@ sudo systemctl restart docker
 
 ```
 
+
+
+
+# ali-cloud
+
+```
+https://cbvdx9uw.mirror.aliyuncs.com
+
+```
+
+
