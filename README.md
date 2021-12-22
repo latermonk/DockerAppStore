@@ -98,6 +98,12 @@ docker run -d --name dev-postgres -e POSTGRES_PASSWORD=Pass2020! -v ${HOME}/post
 
 ###  mysql
 
+
+```
+docker run -d --name=mysql -p 127.0.0.1:3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw mysql:5.6
+
+```
+
 ```
 docker run -itd --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
 ```
