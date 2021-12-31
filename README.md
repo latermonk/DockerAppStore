@@ -129,6 +129,14 @@ docker run -it --network host --rm mysql mysql -h127.0.0.1 -P13306 --default-cha
 [https://hub.docker.com/_/redis](https://hub.docker.com/_/redis)
 [https://github.com/bitnami/bitnami-docker-redis](https://github.com/bitnami/bitnami-docker-redis)
 
+
+
+```
+docker run -d -p 6379:6379  --restart=always  --name redis -e ALLOW_EMPTY_PASSWORD=yes bitnami/redis:latest
+
+```
+
+
 ```
 docker run --name some-redis -d redis
 
