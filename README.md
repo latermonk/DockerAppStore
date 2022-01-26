@@ -20,6 +20,22 @@ docker run -d -p 58000:8000 -p 59000:9000 --name=portainer --restart=always -v /
 ```
 ###  Web-ssh terminal 
 
+** web ssh terminal**
+https://github.com/Jrohy/webssh    
+
+```
+
+docker run -d -p 55032:5032 --log-driver json-file --log-opt max-file=1 --log-opt max-size=100m --restart always --name webssh -e TZ=Asia/Shanghai ibackchina2018/webssh
+
+
+
+
+docker run -d -p 5032:5032 --log-driver json-file --log-opt max-file=1 --log-opt max-size=100m --restart always --name webssh -e TZ=Asia/Shanghai jrohy/webssh
+
+
+
+```
+
 ```
 docker run --rm -p 3000:3000 wettyoss/wetty --ssh-host=<YOUR-IP>
 
