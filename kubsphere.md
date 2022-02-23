@@ -3,7 +3,7 @@
 
 
 ```
-apt update   &&   apt install socat ipset conntrack docker.io nfs-common  ceph-common glusterfs-client  -y
+apt update   &&   apt install curl socat ipset conntrack docker.io nfs-common  ceph-common glusterfs-client  -y
 
 ```
 
