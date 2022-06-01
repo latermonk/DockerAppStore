@@ -116,6 +116,13 @@ docker run -d --name dev-postgres -e POSTGRES_PASSWORD=Pass2020! -v ${HOME}/post
 ```
 
 
+```
+docker run -d --name postgres-container -e TZ=UTC -p 30432:5432 -e POSTGRES_PASSWORD=My:s3Cr3t/ ubuntu/postgres:14-22.04_beta
+
+```
+
+https://hub.docker.com/r/ubuntu/postgres
+
 
 ###  mysql
 
