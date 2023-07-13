@@ -11,3 +11,7 @@ The ImagePolicyWebhook admission controller is useful for enforcing security pol
 
 Note that the ImagePolicyWebhook admission controller is only available in Kubernetes clusters that have the admissionregistration.k8s.io/v1 API enabled. It is also important to configure the webhook endpoint securely, as it has the ability to block all pod deployments in the cluster.
 ```
+
+
+---
+
