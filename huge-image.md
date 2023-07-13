@@ -1,4 +1,4 @@
-# Make a huge image
+# 01 - Make a huge image
 ```
 docker run -it ibackchina2018/ubuntu-sshd:1804 /bin/bash
 
@@ -9,7 +9,7 @@ docker commit Container-ID ibackchina2018/ubuntu-sshd:huge
 docker push ibackchina2018/ubuntu-sshd:huge
 ```
 
-# Check the size
+# 02 - Check the size
 ##  Compressed size - Size in docker registry
 ```
 docker manifest inspect ibackchina2018/ubuntu-sshd:huge | grep "size" | awk '{s+=$2} END {print "Total size: " s/1024/1024 " MB"}'
@@ -30,7 +30,7 @@ got:
 ibackchina2018/ubuntu-sshd   huge      2bc923a8ae24   19 minutes ago   11GB
 ```
 
-# Trivy Scan
+# 03 - Trivy Scan
 ```
 trivy image ibackchina2018/ubuntu-sshd:huge
 ```
