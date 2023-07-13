@@ -56,7 +56,7 @@ got:
 ctr images  pull  docker.io/ibackchina2018/ubuntu-sshd:huge
 ctr images  ls
 ```
-got:  
+got:  149.2 MiB         
 
 ```
 docker.io/ibackchina2018/ubuntu-sshd:huge application/vnd.docker.distribution.manifest.v2+json sha256:2230b2c7de6baae3142fd2fe260d73458671ba1f9e16fd6023e71cfb9c1bdff6 149.2 MiB linux/amd64 -
