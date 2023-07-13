@@ -10,7 +10,7 @@ docker push ibackchina2018/ubuntu-sshd:huge
 ```
 
 # Check the size
-##  Compressed size
+##  Compressed size - Size in docker registry
 ```
 docker manifest inspect ibackchina2018/ubuntu-sshd:huge | grep "size" | awk '{s+=$2} END {print "Total size: " s/1024/1024 " MB"}'
 ```
@@ -20,7 +20,7 @@ got:
 Total size: 149.175 MB
 ```
 
-## Uncompressed size  
+## Uncompressed size  - Size in local node
 ```
 docker pull ibackchina2018/ubuntu-sshd:huge
 docker images -a |grep huge
