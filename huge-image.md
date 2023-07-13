@@ -64,7 +64,7 @@ docker.io/ibackchina2018/ubuntu-sshd:huge application/vnd.docker.distribution.ma
 ```
 
 
-# 05 cahtgpt -> WHY ?     ctr will display the size of the image as it is stored in the image registry
+# 05 -> WHY ?     ctr will display the size of the image as it is stored in the image registry
 ```
 The ctr command is a low-level tool for interacting with the CRI (Container Runtime Interface) used by container runtimes like CRI-O, and it is designed to work with images in their compressed form. When you use the ctr images ls command to list the available images, ctr will display the size of the image as it is stored in the image registry (e.g., Docker Hub). This size represents the compressed size of the image.
 
