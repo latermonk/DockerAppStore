@@ -64,6 +64,14 @@ docker.io/ibackchina2018/ubuntu-sshd:huge application/vnd.docker.distribution.ma
 ```
 
 
+# 05 cahtgpt -> WHY ?     ctr will display the size of the image as it is stored in the image registry
+```
+The ctr command is a low-level tool for interacting with the CRI (Container Runtime Interface) used by container runtimes like CRI-O, and it is designed to work with images in their compressed form. When you use the ctr images ls command to list the available images, ctr will display the size of the image as it is stored in the image registry (e.g., Docker Hub). This size represents the compressed size of the image.
+
+This is because the images stored in the image registry are typically stored in a compressed format (such as a tarball), and are downloaded and uncompressed by the container runtime when a container is created. The uncompressed size of the image can vary depending on the specific image content and layers, and may not be known until the image is actually pulled and uncompressed by the container runtime.
+
+While it is possible to calculate the uncompressed size of an image by downloading and uncompressing it, this can be a time-consuming process and is not necessary for most use cases. The compressed size of the image is usually a good indicator of how much disk space will be required to store the image on the local system or in the image cache of the container runtime.
+```
 
 
 
