@@ -1,5 +1,5 @@
 # multipass
 
 ```
-multipass launch --name abc --dridged
+multipass launch --name abc --bridged
 ```
